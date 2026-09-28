@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-29",
+  "title": "정부가 납입액의 6% 또는 12%를 얹어주는 적금",
+  "item_ids": [
+    "온통청년:11b41bf2f987"
+  ],
+  "item_titles": [
+    "청년미래적금"
+  ],
+  "deadline": "2026-10-16",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "34096df84ada878dd3af1846f3ba0bd4dc5fd1be7be068a7320326a6b8913ade"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "0ee965600425db9a4bf9fd54e6863cf2b28584e8cfbee8e924b4cb409e288cc8"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "fb1463038faa77cef71dcc6e317b2f540bf95da5adfe79b8c08f169099b08798"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "fa0420d08648b3f7f7b0fdde0ee671e6e3d58172fa998ffa7870a098b80b0b86"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "7a20540613071ea26af6fe61932b97b46f0dfb453eee26f19f09dbe04f2c8e2e"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "1f2884c804ab54f59463f2908a4aca47b04d809666329a0df22808b3e52af019"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "1033053aa181deed5c345c9884583f0e699b754a89fee8010c16ca1319345d27"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "85a535bdcf55a437c858c43706b605475bb6b10347faa50a01f46fe02fa3548e"
+  },
+  "caption_sha256": "b9dfcb1ecb2f2dc887f03994f60020b4abd7c27d5e57c5ec5594a19405219f8d",
+  "first_comment_sha256": "58144d9bb2dbb3eba15ff801c0183ef07fb0f09b28f4ece3d0ade3793105ad8a",
+  "draft_revision": 1,
+  "approved_at": "2026-09-28T17:43:25"
+}
