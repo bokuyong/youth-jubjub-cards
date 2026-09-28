@@ -1,0 +1,62 @@
+# 청년줍줍 예약 발행 — PC 가 꺼져 있어도 대기열(queue/오늘날짜)을 게시한다.
+# 원본: jubjub-auto/cloud/publish.yml → youth-jubjub-cards/.github/workflows/publish.yml 로 배포
+name: 예약 발행
+
+on:
+  schedule:
+    - cron: "30 11 * * *"   # 20:30 KST
+    - cron: "30 12 * * *"   # 21:30 KST 재시도 — GitHub 가 첫 실행을 건너뛰거나 실패한 경우. 이미 게시됐으면 아무것도 안 함
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "게시할 날짜 YYYY-MM-DD (비우면 오늘 KST)"
+        required: false
+      dry_run:
+        description: "켜두면 컨테이너 생성까지만 하고 게시하지 않음"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write            # published.json 기록 커밋
+
+concurrency:
+  group: publish             # 두 실행이 겹쳐 같은 날을 두 번 올리는 일이 없게
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 게시
+        env:
+          IG_API_MODE: ${{ secrets.IG_API_MODE }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          IN_DATE: ${{ inputs.date }}
+          IN_DRY: ${{ inputs.dry_run }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          args=()
+          [ -n "$IN_DATE" ] && args+=(--date "$IN_DATE")
+          [ "$IN_DRY" = "true" ] && args+=(--dry-run)
+          [ "$SCHEDULE" = "30 11 * * *" ] && args+=(--warn-empty)
+          python3 publisher/publish_queue.py "${args[@]}"
+
+      - name: 게시 기록 저장
+        if: always()
+        run: |
+          git config user.name "jubjub-publisher"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add queue/*/published.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "기록할 것 없음"; exit 0; fi
+          git commit -m "게시 기록 $(TZ=Asia/Seoul date +%F)"
+          for i in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          exit 1
