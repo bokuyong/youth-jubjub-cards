@@ -4,8 +4,10 @@ name: 예약 발행
 
 on:
   schedule:
-    - cron: "30 11 * * *"   # 20:30 KST
-    - cron: "30 12 * * *"   # 21:30 KST 재시도 — GitHub 가 첫 실행을 건너뛰거나 실패한 경우. 이미 게시됐으면 아무것도 안 함
+    # 매시간. GitHub 예약 실행은 수 시간씩 밀려서(실측 5~9시간) 하루 한 번 예약으로는
+    # 저녁 발행을 맞출 수 없다. 발행기는 19:00~23:30 KST 에 든 실행에서만 게시하고
+    # 이미 게시했으면 아무것도 안 한다. 정각을 피하면 GitHub 혼잡이 덜하다.
+    - cron: "17 * * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -39,12 +41,12 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           IN_DATE: ${{ inputs.date }}
           IN_DRY: ${{ inputs.dry_run }}
-          SCHEDULE: ${{ github.event.schedule }}
+          EVENT: ${{ github.event_name }}
         run: |
           args=()
           [ -n "$IN_DATE" ] && args+=(--date "$IN_DATE")
           [ "$IN_DRY" = "true" ] && args+=(--dry-run)
-          [ "$SCHEDULE" = "30 11 * * *" ] && args+=(--warn-empty)
+          [ "$EVENT" = "schedule" ] && args+=(--scheduled)
           python3 publisher/publish_queue.py "${args[@]}"
 
       - name: 게시 기록 저장
@@ -52,7 +54,7 @@ jobs:
         run: |
           git config user.name "jubjub-publisher"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add queue/*/published.json 2>/dev/null || true
+          git add queue/*/published.json state/ 2>/dev/null || true
           if git diff --cached --quiet; then echo "기록할 것 없음"; exit 0; fi
           git commit -m "게시 기록 $(TZ=Asia/Seoul date +%F)"
           for i in 1 2 3; do

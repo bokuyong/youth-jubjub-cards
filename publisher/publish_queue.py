@@ -14,7 +14,11 @@ PC 가 꺼져 있어도 발행되게, PC 에서 검토·승인해 올려둔 대�
         published.json       ← 여기서 게시 성공 후 기록
 
 원칙
-- **오늘(KST) 폴더만** 게시한다. 놓친 날을 다음 날 올리지 않는다 — 카드에 D-day 가 박혀 있다.
+- **오늘(KST) 폴더만, 저녁 발행 시간대(19:00~23:30 KST)에 돈 실행에서만** 게시한다.
+  GitHub 예약 실행은 수 시간씩 밀린다(실측: 20:30 예정이 다음 날 01~05시에 시작).
+  예전엔 "실행 시점의 오늘"을 썼더니 자정 넘어 돈 실행이 **다음 날 게시물을 새벽에 미리** 올렸다
+  (2026-09-29 03:39 사고). 그래서 워크플로는 매시간 돌고, 시간대 안에 든 첫 실행만 게시한다.
+- 놓친 날을 다음 날 올리지 않는다 — 카드에 D-day 가 박혀 있다. 대신 알림을 보낸다.
 - 파일 해시가 manifest 와 다르면 게시하지 않는다(검토한 파일 = 올라가는 파일).
 - 마감일이 지난 공고는 게시하지 않는다.
 - 같은 캡션이 최근 36시간 안에 이미 올라가 있으면 게시하지 않는다(재시도 실행·기록 실패 대비).
@@ -263,34 +267,73 @@ def run(day: str, dry: bool) -> int:
     return 0
 
 
+STATE = ROOT / "state"                   # 알림 중복 방지 표식 — 워크플로가 커밋한다
+WINDOW = ((19, 0), (23, 30))             # 발행 시간대(KST)
+
+
+def _once(key: str) -> bool:
+    """처음 부르면 True 와 함께 표식을 남긴다. 매시간 실행이라 같은 알림이 반복되지 않게."""
+    STATE.mkdir(exist_ok=True)
+    p = STATE / key
+    if p.exists():
+        return False
+    p.write_text(datetime.now(KST).isoformat(timespec="seconds"), encoding="utf-8")
+    return True
+
+
+def in_window(now: datetime) -> bool:
+    (h1, m1), (h2, m2) = WINDOW
+    return (h1, m1) <= (now.hour, now.minute) <= (h2, m2)
+
+
 def warn_if_tomorrow_empty(day: str) -> None:
     tomorrow = (datetime.strptime(day, "%Y-%m-%d") + timedelta(days=1)).strftime("%Y-%m-%d")
-    if not (QUEUE / tomorrow / "manifest.json").exists():
-        ahead = sorted(p.name for p in QUEUE.glob("20*") if p.name > day
-                       and (p / "manifest.json").exists())
-        telegram(f"📭 내일({tomorrow}) 예약이 비어 있어요.\n"
-                 f"PC 를 켜면 Claude 가 검토 후 대기열을 채웁니다.\n"
-                 f"남은 예약: {', '.join(ahead) if ahead else '없음'}")
+    if (QUEUE / tomorrow / "manifest.json").exists() or not _once(f"warned-{day}"):
+        return
+    ahead = sorted(p.name for p in QUEUE.glob("20*") if p.name > day
+                   and (p / "manifest.json").exists())
+    telegram(f"📭 내일({tomorrow}) 예약이 비어 있어요.\n"
+             f"PC 와 Claude 앱을 켜면 대기열 채우기 작업이 검토 후 채웁니다.\n"
+             f"남은 예약: {', '.join(ahead) if ahead else '없음'}")
+
+
+def report_missed(now: datetime) -> None:
+    """시간대 안에 한 번도 못 돌아 게시하지 못한 날이 있으면 한 번 알린다(늦게 올리지는 않음)."""
+    for days_back in (1, 2):
+        d = (now - timedelta(days=days_back)).strftime("%Y-%m-%d")
+        f = QUEUE / d
+        if (f / "manifest.json").exists() and not (f / "published.json").exists() \
+                and _once(f"missed-{d}"):
+            telegram(f"⚠️ {d} 예약 게시물을 발행 시간대에 올리지 못했어요(GitHub 실행 지연).\n"
+                     f"카드에 날짜가 박혀 있어 늦게 올리지 않았습니다. 다시 예약이 필요해요.")
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--date")
     ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--warn-empty", action="store_true")
+    ap.add_argument("--scheduled", action="store_true",
+                    help="예약 실행 — 발행 시간대 안에서만 게시하고, 빈 날·놓친 날 알림을 보낸다")
     a = ap.parse_args()
     if a.date and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", a.date):
         print(f"⛔ 날짜 형식 오류: {a.date!r}")
         return 2
-    day = a.date or datetime.now(KST).strftime("%Y-%m-%d")
+    now = datetime.now(KST)
+    day = a.date or now.strftime("%Y-%m-%d")
+
+    if a.scheduled:
+        report_missed(now)
+        if not in_window(now):
+            print(f"{now:%Y-%m-%d %H:%M} KST — 발행 시간대(19:00~23:30) 아님, 게시하지 않음")
+            return 0
     try:
         rc = run(day, a.dry_run)
     except Exception as e:
         print(f"⛔ {e}")
-        if not a.dry_run:
+        if not a.dry_run and _once(f"failed-{day}"):
             telegram(f"⛔ 청년줍줍 발행 실패 {day}\n{e}")
         return 1
-    if a.warn_empty and not a.dry_run:
+    if a.scheduled and not a.dry_run:
         warn_if_tomorrow_empty(day)
     return rc
 
