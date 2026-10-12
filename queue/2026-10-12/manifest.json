@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-12",
+  "title": "대학 학생식당 아침 한 끼 1,000원",
+  "item_ids": [
+    "온통청년:0526c72284b9"
+  ],
+  "item_titles": [
+    "대학생 천원의 아침밥 지원 확대"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "bd041491917b680495232105cd6d9a6dfe29565e04cf7594873d28a2c601f630"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "3523d468212543ab13479142d37c1d8a9d350390321232ce77db370a113a5efb"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "3b607c0bac1f02d5e105cbf5abae08fa3dc87377954c5c6751d1dd38478311b3"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "ca03b4886771eaf77bfd5ad2dfc67adb670e71482c1f4ac6e00d93f6ef52619c"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "1aeb70bee4946a1b7d4faea7dae00dfa424b40b28cd1f10e9b884170f89e4074"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "d88fdff46563c39b279356101c90207a667cfd4e4582b58dc08e53338bae8af8"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "08bee8626bf14af65b28e001bf5838564afe2b6866d0a9255fce3f23ac0b78f0"
+  },
+  "caption_sha256": "37a499777ab752c3d3fc1b3f5ea543c6d0a693cd44cec7d4a5ca9518f5c1cf3a",
+  "first_comment_sha256": "d16534583fbe735f64d69ed94d12f8c158a006925341ec7c6e35a6396f73bab1",
+  "draft_revision": 1,
+  "approved_at": "2026-10-12T13:54:23"
+}
