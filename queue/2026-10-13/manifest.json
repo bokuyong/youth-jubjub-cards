@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-13",
+  "title": "자립준비청년 LH 공공임대 우선 공급",
+  "item_ids": [
+    "온통청년:7a99b9764712"
+  ],
+  "item_titles": [
+    "자립준비청년 주거지원"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "ec80cbd8c788caf32665e40f63ae1747c103af8caa5177b341b72f8fe637e7b3"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "66fa2c2337f8bd0c70e0cbdac95d78dbe75cfa35ed021e0449892d154d8fcfa4"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "912443d3bc34d913018f082c5ea60bea8c408cc1d731384b6fd379340c30b51b"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "f650dbf65852d0df82ea4a8e64eab8bcdbede12d66640d14a1feb203cb430595"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "515a892499577c158d982ff3c0205745a03633ab602bf579611d027886f1d9d4"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "91d30d9ba4a8248206de7e374f87443d16918f016413d5a1699e2d482aac08e7"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "405a6dba134077a06033222e857f96c99d0697ce3ea86fa605c9c7608c979406"
+  },
+  "caption_sha256": "7eeff928668cc227b440aa124bafb68746614150403a69057f6c2bc2fba1c515",
+  "first_comment_sha256": "d158fdb0ad58481bf127397e02252b2ff7c5e1cd316c68932538c1abb87e83b2",
+  "draft_revision": 1,
+  "approved_at": "2026-10-12T14:02:11"
+}
