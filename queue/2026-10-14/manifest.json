@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-14",
+  "title": "기업 직무 과정 듣고 훈련수당까지 받는 K-뉴딜 아카데미",
+  "item_ids": [
+    "온통청년:bb81713f7c08"
+  ],
+  "item_titles": [
+    "k-뉴딜 아카데미"
+  ],
+  "deadline": "2026-12-31",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "50525ff0472cbbbc7209f6f54b1122bbffc4cb536a386b2d81e42db3b7cf607a"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "1f230c012ae72b981b9c464fba54d75c2763aab840545f3eced315162f29bd25"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "cf393860e78da99c815c57ae390c07c54a048b436b532f3ddbee2362072199f0"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "bed802649f536721f6ecdce7ca705bef115b1a07be1ddf652680d5fbc084bed3"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "6266284e567b1bbbe3874064c459ab0b008b8510197b81ea457ab6452d526ac6"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "1fdc60d02930ee421d094ca15bcec2b6369c4bf995bdf1443be5e1809d9965e6"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "c23e854449bcbc9af34fc1318ae7a6c52b5a5b2dffe7c88e7d719ee56dca960b"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "a9b00fdad4541e60abb5b08f6860a659bc9def1d1baff7823ad51e4fe2037856"
+  },
+  "caption_sha256": "3b7058222b3729944f255749d379bb2dc186b9760294d7965866041e048c8d2f",
+  "first_comment_sha256": "664c9d327986e1d14a9051fdd9623b4c00d05167c53f20b63ef6ba45d7e605ac",
+  "draft_revision": 1,
+  "approved_at": "2026-10-12T14:05:24"
+}
