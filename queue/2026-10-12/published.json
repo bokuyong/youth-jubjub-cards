@@ -1,0 +1,7 @@
+{
+  "status": "published",
+  "permalink": "https://www.instagram.com/p/DeZT1vtkVVh/",
+  "reel_media_id": "18285376294293519",
+  "published_at": "2026-10-12T22:10:00+09:00",
+  "note": "게시는 정상 완료. 워크플로 기록 단계 버그(state/ 미존재 시 git add 전체 실패)로 published.json 이 커밋되지 않아 2026-10-16 수동 보충. run 38253825791"
+}
