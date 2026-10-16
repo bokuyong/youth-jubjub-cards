@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-17",
+  "title": "내 창업 아이디어, 투자자 앞에서 발표해 볼까",
+  "item_ids": [
+    "K-Startup:b99673405220"
+  ],
+  "item_titles": [
+    "대학생 예비 창업가의 아이디어를 검증할 실전 무대, 2026 『신한 스퀘어브릿지』 HERO IR 참가자 모집(~11/2)"
+  ],
+  "deadline": "2026-11-02",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "1c76162e89c1393248192622a6c44e05ec43f33be79b00bf62309926d3111376"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "b08db375838c8e6eda5b89ae7c1042e579a9f46819df935d3fdead92f748d1eb"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "16398160b84bad45ff58f180e8fc0341721fb0c187413bde3360ec053395e540"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "c8d0186f16a21ba71117876cbb280343bc7aea5354578efe2e79f88f9570b02c"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "e4fd934e4a19da52bb90bf0b7d081c8cb6f5a5b33e48e059fe3320713ae8a530"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "35ec54379b55316af654acd5a0cd14239ce82c9440527175e333b594a71f4064"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "89f72f287366b6f7168ee5b1696b94635868432a16fffd1de27d0f43b95b3c92"
+  },
+  "caption_sha256": "043cd6ca164592c3ae60987f7decb55d2241af918cc3ff0a59f3cd58935da2fe",
+  "first_comment_sha256": "95dc51a2e766a0f4288a8f8c75865ba5b63f7674291ad3b107c96d960f264da6",
+  "draft_revision": 3,
+  "approved_at": "2026-10-16T13:39:03"
+}
