@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-18",
+  "title": "구리시를 살릴 창업 아이디어 있다면",
+  "item_ids": [
+    "K-Startup:e75a01c2883d"
+  ],
+  "item_titles": [
+    "[구리시 청년내일센터] 2026 창업아이디어 경진대회 참가자 모집"
+  ],
+  "deadline": "2026-11-05",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "d35d488c980f508fd5e73387623f698222655722a6a274ae0e8dddbac6fa8a8f"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "34dda0ea78a8c0c0a1404081cc1564fb5ada253a4edbb4eb88d495c10dcf5b02"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "5f80057a334597b276559348c84284fa83ae9699106b7f96613b7399744ea69e"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "d35d9792d1d48ee273673e2ca01a8c85d99a9ea23f250d786cbaed7631c37ee3"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "20f140913797ad6f2723eaabbd4e1bcf8c43419e6461348f7c0f8f21076579ac"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "d845c1fc01f90be369485a6762831d783da944e17af096c0ed1f8e7cc968c181"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "993e6edc71b66c9f0012a6c8b5e8a8afb0ba261e5b94b6fe1e4d8f609bc36e92"
+  },
+  "caption_sha256": "ad362042f93b588966ef676a7b627f791bc739ef8f22963929c4faacb4baf43b",
+  "first_comment_sha256": "cea68d981266852c17bc2d7bdfb1063bd8b45821ca3ec60c2a4a3e066e142ce2",
+  "draft_revision": 3,
+  "approved_at": "2026-10-16T13:42:02"
+}
