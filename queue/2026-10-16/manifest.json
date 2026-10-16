@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-16",
+  "title": "전남 13개 군에서 창업할 청년팀 97팀 모집",
+  "item_ids": [
+    "온통청년:c0d225dab2d7"
+  ],
+  "item_titles": [
+    "2026년 전남광주 제3기「지역자원 연계 청년창업 지원사업」"
+  ],
+  "deadline": "2026-10-30",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "4ffb1128a913171523627c00d0c4849e9c759b67331a9bd7e69f9dbb22c991d9"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "64667684a857e7b342aed4461abe562616820cc0508e172eaefb4c648e51d31d"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "a7240728cc6d8a010f2bbc062a8b77237f7b07a4cc1e19f02072c3a2198e546b"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "2137f39d78e061b9be52c7e12b9cdbfa30e2ba9c90b048888ef9301a2f090309"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "33f587a4209b543306adf6094dc43a70f9cc8460571691a67af9fa6893db935f"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "6ab3754ea9fce1d7aa24dd849c518b3ac4d96e3e77ef1135bb343e84a91053d7"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "bdb71a3b786277b53e0bcb264078a7af2eb8e9d43858df250fe6b6e3521d71ec"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "5d96c270eb65a0d7704dcbdda870aa4f0fbad10c2dfba2cafa1631d40f05a21f"
+  },
+  "caption_sha256": "64f795ba48dff639b594282a998fa1a6ada114865cea26a5457db5ef1da609d5",
+  "first_comment_sha256": "e3cb9aceed84f0b4f7992b390a1ff926e6e05244ecb125f3ff184df0b0626770",
+  "draft_revision": 4,
+  "approved_at": "2026-10-16T13:34:24"
+}
