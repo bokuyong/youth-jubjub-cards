@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-31",
+  "title": "경산 사는 대학생 학자금대출 이자 1년치 시가 대신 갚아줘요",
+  "item_ids": [
+    "온통청년:e4e76f773eb4"
+  ],
+  "item_titles": [
+    "대학생 학자금대출 이자지원"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "9389ec05954e59c45ead6e85c17bbbe7dcb605633fa32076bdb7fc4e203163e9"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "10c6a579bef524e9d3e3b87292e18f962ede083108225f2eca7d3648a78df908"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "0580ea7d6e58090ba55c1de1037f6f8e4f6e97ff1ba9ac8905c7c7c918df6ea4"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "1d475dc28b4630d93c0104faf44f3207bd0ee763460a17aa86d3bc5bb3a86ec8"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "069cc2e8ad34cb6ddfb29db47193223407716c3a93a5df0d4c0ed5ba02afedd3"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "84b01abe85358864195e9885bf65d63ceafc66a376e14735b6287ce15b722fd1"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "d82296c55e98df5b2a465c07d3baf9aa83b02c72d5fd5300f7095c654a3e25ae"
+  },
+  "caption_sha256": "578db8ad9a6a1bf038b031f490b5d6901ba93610dd97aa3e247438b7df6efc00",
+  "first_comment_sha256": "7f4987e8c9b438c3e0e9cfb734137cf1a2e2209b99a11e14620c57424fa79072",
+  "draft_revision": 2,
+  "approved_at": "2026-10-30T13:05:05"
+}
