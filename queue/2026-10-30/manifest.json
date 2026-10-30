@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-30",
+  "title": "대구 무주택 청년 전세대출 금리 최대 연 3.5% 깎아줘요",
+  "item_ids": [
+    "온통청년:c14738325a49"
+  ],
+  "item_titles": [
+    "청년 전월세 임차보증금 대출이자 지원"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "60d29246cc2ca4dec3493bd4067c7f4da0ce3abbef60677e23cae35c1814d530"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "0430f944702821cf0052ea94c5ae49f3e05d217f16b26ca074883298adb867b1"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "b29e109f9047b3cdd9bb44a120d5940b29a91ef50c12cacba115285f5a20db5c"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "085d1122c3f597412f4dce41668ff9befbb312930017f2f0fd08a309ad319144"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "deca3e9ef7c8cb170a0233184352d2617715b772e389e1774f01274fc9f309da"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "17beca90d4e686223f7bc42b4e16e31d97337679f39eed972027a10ac117ac58"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "adfe1f917b4795436b9f38eff683453a2ec8e8d9f0b9ec252341106480c71c15"
+    },
+    {
+      "name": "07.jpg",
+      "sha256": "29d51166c9916546aa33cae0dbaa3d287582a1d3d6907bcac949214751e2264e"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "1c1cd30c9c0a3f422bfc8623af3fd79de60b0ea373edc6a91273bc427d8e09cc"
+  },
+  "caption_sha256": "45addcea64097d4ada9bdeae3183317d8a649f4adb2752ce99265c37aa9feae4",
+  "first_comment_sha256": "9db5d49ac1ca29b37fe938eb14f7e9fc0aaa0fc4b05565a353512264b9a4342e",
+  "draft_revision": 3,
+  "approved_at": "2026-10-30T13:01:15"
+}
