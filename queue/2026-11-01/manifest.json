@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-01",
+  "title": "공연·전시·영화 보는 최대 20만원 추가 발급 중",
+  "item_ids": [
+    "온통청년:39966b83f0d7"
+  ],
+  "item_titles": [
+    "청년 문화예술패스 지원"
+  ],
+  "deadline": "2026-11-30",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "912c844d87bace0abe7902218b4f127c635cc2ca4bce838a0bff50fae21bf79b"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "8e7734aa95452e89646d62af82f91d1bd32419a9403f714f5d87d5d57ad872ca"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "f3e7c4c9d8194d97f11c3cd3d15a261a5de2f4b3043bde054c4495b29368cf80"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "ebbc5a36e9429b3de636ed6e7790f4cbb7d125a7cb4e433cafb960f9c080a2f9"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "25a39cd6949983896b519d918018619f5dfc554a6a811e57bea3cfbd5d8d5afb"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "a691125bbbd6c7263650c06b9786f3d9d6ca4c015529db263d7cba098c549261"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "c1847cc71c15c2966e84190cf3415c41ebf5a8a71395248070965b738b297dce"
+  },
+  "caption_sha256": "81bac17a68b0d51178cff21d5625bb93a5d794e58d2e7f3fb4c5ef34a1e788c1",
+  "first_comment_sha256": "1f18c98e7e47ae74eb21725cb4152af806336d7147321c2fc7f0054113dd3ae6",
+  "draft_revision": 2,
+  "approved_at": "2026-10-31T10:15:34"
+}
