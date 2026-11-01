@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-02",
+  "title": "2023년 이후 결혼한 장흥 신혼부부라면 이사비 최대 50만원",
+  "item_ids": [
+    "온통청년:442147d0431e"
+  ],
+  "item_titles": [
+    "신혼부부 이사비 지원"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "28514290a5ed9f6d431165547fd21541c2fa3d5d4df2f4eaba09c36e2704ac69"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "e1b4450a2b5c190959c3f10b0941ca3741e565d3f15dce5b72eab52d9e567568"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "7c0af2300192c0d26fc958f9f2ebdea20cef1f2d6216545649916d8d67da1ef5"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "43edaa69e5b595a6849cd422cd01e335674a2163cf98b5bcf7852b31d570b2b7"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "a70364eb79b591a25d946d0909ed364d5ba4a193fa33a35fac3d997ec0389adb"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "bbd15260fd703c4d8cd18772305f88b399b0be11aceaa1ef4a9ff526e0ca7ab3"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "e5517caa3d9246caeed31829fb8a91d9bc4ca3f54d9ad8c01900c0e8942143d1"
+  },
+  "caption_sha256": "55e11b3d75402742d069c53a114656a33819a57249816efd39f52c79445185d5",
+  "first_comment_sha256": "52322acc1f5ebe73a48776b8fa456634ab5fac487d9c5fd0e8aa9bdc3f069204",
+  "draft_revision": 2,
+  "approved_at": "2026-11-01T10:11:28"
+}
