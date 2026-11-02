@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-04",
+  "title": "자립준비청년 대상 경기도 내 매입임대 시세 30% 수준",
+  "item_ids": [
+    "온통청년:7675a21087d4"
+  ],
+  "item_titles": [
+    "자립준비청년 주거비 지원사업"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "6d23f721769c0092262850dfaf43c89f527e1963e47ecb78226c6b86cf6efd7c"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "18eb6ffbc1f9674a29adb2bffebbf04f91915b9792809df816a6b2705ef47d7d"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "7bc7d1cc5f8f0248e8ea12b753aea978e834b72202e5e65a997d51560b203142"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "40f7e20d35e03276ed829bfa6e4724569dff0872d666a7fc99584f27a1224c7f"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "9e63e9a736adf8c24893cb82ab2c4068ca5c0b6b4f856c8949fd76881bec566e"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "cc60a0511a0283d9d7ac4d4773aadde4bbd44b6e32bd1f0a746f24f4cf85790d"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "797c5083fa68ea4cfc2a027b35d889f44cde3b1e640f3656105713592e6ae6ec"
+    },
+    {
+      "name": "07.jpg",
+      "sha256": "ea4154e56d281dc9b792b7390c419a24feac5212608260148254607f17c086fe"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "a692083b6b77a54e2305c22f620684d3a2958797d4878c8950e9e56ff57cce29"
+  },
+  "caption_sha256": "504fcc0cad3e18311c29b2626d497e1804b97517bf57f3edb55f1163a209a360",
+  "first_comment_sha256": "9798db4171b05dfcdac298882e09437af727dd69ae0a56399cdc302ebde89494",
+  "draft_revision": 3,
+  "approved_at": "2026-11-02T10:22:54"
+}
