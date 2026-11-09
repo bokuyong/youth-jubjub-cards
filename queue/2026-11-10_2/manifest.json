@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-10",
+  "title": "목포 3개 대학 전입 재학생이면 최대 60만원",
+  "item_ids": [
+    "온통청년:506cad6af48e"
+  ],
+  "item_titles": [
+    "전입대학생 생활안정자금 지원사업"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "a118203da813f3c61fe504ab29df0162776a8f4a2e383822973b7d38889c0b2a"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "97cc2335c7c7d48faffb8d700ecbd59872d34dc08ec5a82d410c899ca164180f"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "2f1ab75440bc44e5eee0e78baa07299bdb1bff36df8d8e14782a24557c4539f5"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "ea9cc765deda56234c93dd16085f5ead0729242c31bb042dd7a3f6af023568cf"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "4f4ccb5b2b2f64787aab71483b833d8a138d83fb708f19eeb27eb712221296e1"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "abade949b813d90fd15aa72d60fca92e2e43d8d07ad9be3d6f68f8901830367e"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "3a0c966b9b30467bf54d498b6c2a4dafd8b0efe98a3cb1394f4cffb122994850"
+  },
+  "caption_sha256": "6086a68ddab1553db201367a9118248670d4022ffa877a547de6cc3d43e18f10",
+  "first_comment_sha256": "e1f4911b0d84c1539d0402ccb6c2c24af42a0929f9255c2cbc72a799c122b92d",
+  "draft_revision": 3,
+  "approved_at": "2026-11-09T21:18:33"
+}
