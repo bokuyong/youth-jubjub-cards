@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-16",
+  "title": "대구 신혼부부 전세대출 이자 연 최대 1.6% 지원",
+  "item_ids": [
+    "온통청년:0b2e21ea3cd2"
+  ],
+  "item_titles": [
+    "신혼부부 전세자금 대출이자 지원"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "4945e9cafbaff8938cac5e89da9bd3f0beb5baaeb3876a6ce9ff93714bbe0336"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "c62a818f5f0e17439ce80f015dcbb7d88f02a46f9e2eb98b97407ccb0e9b9a9e"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "285f04ec48335657ddace76a2a62e8cdeb458365b6335aa14244aa1bcfbac279"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "8c8fc91b8e939ade7fa1205e4efc1c22477f842f9d21fd477d20f218cbb308d5"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "52d206e7539b6464e0705a5bad1e6becfae13971b17207a0d5b4b59cc5c314de"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "6e55c1901d3349ee8019c33b1c138bd6498c7a5f9affed17c44d8dcb6b9607db"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "00ded9350d81fe0b6a0bcc440d9d5a266980e40edfbf0c2e1598a94ec0cb8eb6"
+  },
+  "caption_sha256": "b178d2750f4d4fcddb4f62be040905a1160b92ec06e2506289fbc20322f8523a",
+  "first_comment_sha256": "9cdf42c7b647dd43d0d7d09ea9ce33318feb96316a9a973a3e72d82d72cdf8a9",
+  "draft_revision": 2,
+  "approved_at": "2026-11-09T14:39:52"
+}
