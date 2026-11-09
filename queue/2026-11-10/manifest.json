@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-10",
+  "title": "보호종료 5년 이내라면 GH 임대주택 보증금 경기도가 지원해요",
+  "item_ids": [
+    "온통청년:7675a21087d4"
+  ],
+  "item_titles": [
+    "자립준비청년 주거비 지원사업"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "a7f4878b088350035d8315408163bfd0ffb6bb6b8b46a76a7c835dab488d424e"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "60d8618c76de54de180665ad7f85677cd897187ab4a22dfda33257acae607e95"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "1c12e18c36549baa659c9e4143d621c30af3d29a94ad68038491e944cbbeac4b"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "fb3469141c3df5fb009aac0d7a2a0cccc1003f4561cf36a3a9522d67abd3c527"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "f6c29438c9dbb4be657601c961d32e37b9bf379245af86c7605442f194ee2384"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "aabaa88d9c41d0bb10dcb81a166112efa58f67dbae734d02b9abc05d1523e09c"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "73bc5ccc488f10e0d7224b72cb835ba96d6c91e6c4e08ca9ca397136aa32aed8"
+  },
+  "caption_sha256": "8ad607a42232879fbb11a6b0fecc6d1e825ef8b5132d73d0dfed7166cbfb5c8f",
+  "first_comment_sha256": "5f0f99cd66ac9220b1965b73b1a68d88c4dfc9775cc7fd7fe88033fd79cab1fc",
+  "draft_revision": 3,
+  "approved_at": "2026-11-09T14:35:36"
+}
