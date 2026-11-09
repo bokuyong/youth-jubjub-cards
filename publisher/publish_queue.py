@@ -182,19 +182,62 @@ def _record(folder: Path, rec: dict) -> None:
     (folder / "published.json").write_text(json.dumps(rec, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def run(day: str, dry: bool) -> int:
-    folder = QUEUE / day
+SLOTS = ("", "_2")                        # 하루 2건: queue/<날짜>/ 와 queue/<날짜>_2/
+SLOT_GAP = timedelta(hours=2)            # 같은 날 두 번째 게시는 첫 게시 2시간 뒤부터
+LAST_CALL = (22, 0)                      # 이 시각 이후 실행은 그날 마지막 기회 — 남은 슬롯을 이어서 올린다
+
+
+def _day_of(key: str) -> str:
+    return key.split("_", 1)[0]
+
+
+def _published_at(key: str):
+    p = QUEUE / key / "published.json"
+    if not p.exists():
+        return None
+    try:
+        rec = json.loads(p.read_text(encoding="utf-8"))
+        ts = rec.get("published_at") or rec.get("noted_at")
+        return datetime.fromisoformat(ts) if ts else datetime.min.replace(tzinfo=KST)
+    except Exception:
+        return datetime.min.replace(tzinfo=KST)
+
+
+def pending_slots(day: str) -> list[str]:
+    """그날 예약됐는데 아직 안 나간 슬롯 키(순서대로)."""
+    return [day + s for s in SLOTS
+            if (QUEUE / (day + s) / "manifest.json").exists()
+            and not (QUEUE / (day + s) / "published.json").exists()]
+
+
+def next_slot(day: str, now: datetime) -> str | None:
+    """이번 실행에서 올릴 슬롯. 앞 슬롯이 나간 지 SLOT_GAP 이 안 됐으면 기다린다(마지막 기회 시간대는 예외)."""
+    pend = pending_slots(day)
+    if not pend:
+        return None
+    key = pend[0]
+    last = max((t for t in (_published_at(day + s) for s in SLOTS) if t), default=None)
+    late = (now.hour, now.minute) >= LAST_CALL
+    if last and now - last < SLOT_GAP and not late:
+        print(f"{key}: 앞 게시({last:%H:%M}) 뒤 {SLOT_GAP} 이 안 지나 다음 실행에 올림")
+        return None
+    return key
+
+
+def run(key: str, dry: bool) -> int:
+    folder = QUEUE / key
+    day = _day_of(key)
     if not (folder / "manifest.json").exists():
-        print(f"{day}: 예약 없음")
+        print(f"{key}: 예약 없음")
         return 0
     if (folder / "published.json").exists():
-        print(f"{day}: 이미 게시됨 → 건너뜀")
+        print(f"{key}: 이미 게시됨 → 건너뜀")
         return 0
 
     token, ig_id = os.environ["IG_ACCESS_TOKEN"], os.environ["IG_USER_ID"]
     m, caption, comment = load_and_verify(folder, day)
-    title = m.get("title", day)
-    print(f"{day}: '{title}' · 카드 {len(m['images'])}장 · 릴스 {'있음' if m.get('reel') else '없음'}")
+    title = m.get("title", key)
+    print(f"{key}: '{title}' · 카드 {len(m['images'])}장 · 릴스 {'있음' if m.get('reel') else '없음'}")
 
     dup = already_posted(caption, token, ig_id)
     if dup:
@@ -206,7 +249,7 @@ def run(day: str, dry: bool) -> int:
     # ① 카드 컨테이너 — dry-run 에서도 만든다(인스타가 이미지 URL 을 실제로 가져가는지 검증)
     children = []
     for f in m["images"]:
-        r = _post(f"{ig_id}/media", {"image_url": _raw(day, f["name"]),
+        r = _post(f"{ig_id}/media", {"image_url": _raw(key, f["name"]),
                                      "is_carousel_item": "true", "access_token": token})
         children.append(r["id"])
     for c in children:
@@ -215,7 +258,7 @@ def run(day: str, dry: bool) -> int:
 
     if dry:
         if m.get("reel"):
-            r = _post(f"{ig_id}/media", {"media_type": "REELS", "video_url": _cdn(day, m["reel"]["name"]),
+            r = _post(f"{ig_id}/media", {"media_type": "REELS", "video_url": _cdn(key, m["reel"]["name"]),
                                          "caption": caption, "share_to_feed": "true",
                                          "access_token": token})
             _wait_ready(r["id"], token, tries=45)
@@ -243,9 +286,9 @@ def run(day: str, dry: bool) -> int:
 
     if m.get("reel"):
         try:
-            r = _post(f"{ig_id}/media", {"media_type": "REELS", "video_url": _cdn(day, m["reel"]["name"]),
+            r = _post(f"{ig_id}/media", {"media_type": "REELS", "video_url": _cdn(key, m["reel"]["name"]),
                                          "caption": caption, "share_to_feed": "true",
-                                         "cover_url": _raw(day, m["images"][0]["name"]),
+                                         "cover_url": _raw(key, m["images"][0]["name"]),
                                          "access_token": token})
             _wait_ready(r["id"], token, tries=45)
             rid = _post(f"{ig_id}/media_publish", {"creation_id": r["id"], "access_token": token})["id"]
@@ -260,7 +303,7 @@ def run(day: str, dry: bool) -> int:
     rec["notes"] = notes
     _record(folder, rec)
 
-    msg = f"✅ 청년줍줍 발행 완료 {day}\n{title}\n{link}"
+    msg = f"✅ 청년줍줍 발행 완료 {key}\n{title}\n{link}"
     if notes:
         msg += "\n⚠️ " + "\n⚠️ ".join(notes)
     telegram(msg)
@@ -291,7 +334,7 @@ def in_window(now: datetime) -> bool:
 
 def warn_if_tomorrow_empty(day: str) -> None:
     tomorrow = (datetime.strptime(day, "%Y-%m-%d") + timedelta(days=1)).strftime("%Y-%m-%d")
-    if (QUEUE / tomorrow / "manifest.json").exists() or not _once(f"warned-{day}"):
+    if any((QUEUE / (tomorrow + s) / "manifest.json").exists() for s in SLOTS) or not _once(f"warned-{day}"):
         return
     ahead = sorted(p.name for p in QUEUE.glob("20*") if p.name > day
                    and (p / "manifest.json").exists())
@@ -303,12 +346,15 @@ def warn_if_tomorrow_empty(day: str) -> None:
 def report_missed(now: datetime) -> None:
     """시간대 안에 한 번도 못 돌아 게시하지 못한 날이 있으면 한 번 알린다(늦게 올리지는 않음)."""
     for days_back in (1, 2):
-        d = (now - timedelta(days=days_back)).strftime("%Y-%m-%d")
-        f = QUEUE / d
-        if (f / "manifest.json").exists() and not (f / "published.json").exists() \
-                and _once(f"missed-{d}"):
+        for slot in SLOTS:
+            d = (now - timedelta(days=days_back)).strftime("%Y-%m-%d") + slot
+            f = QUEUE / d
+            if not ((f / "manifest.json").exists() and not (f / "published.json").exists()
+                    and _once(f"missed-{d}")):
+                continue
             telegram(f"⚠️ {d} 예약 게시물을 발행 시간대에 올리지 못했어요(GitHub 실행 지연).\n"
-                     f"카드에 날짜가 박혀 있어 늦게 올리지 않았습니다. PC 대기열 채우기 작업이 새 날짜로 다시 만들어 예약합니다.")
+                     f"카드에 날짜가 박혀 있어 늦게 올리지 않았습니다. "
+                     f"PC 대기열 채우기 작업이 새 날짜로 다시 만들어 예약합니다.")
 
 
 def main() -> int:
@@ -318,11 +364,11 @@ def main() -> int:
     ap.add_argument("--scheduled", action="store_true",
                     help="예약 실행 — 발행 시간대 안에서만 게시하고, 빈 날·놓친 날 알림을 보낸다")
     a = ap.parse_args()
-    if a.date and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", a.date):
-        print(f"⛔ 날짜 형식 오류: {a.date!r}")
+    if a.date and not re.fullmatch(r"\d{4}-\d{2}-\d{2}(_2)?", a.date):
+        print(f"⛔ 날짜 형식 오류: {a.date!r} (YYYY-MM-DD 또는 YYYY-MM-DD_2)")
         return 2
     now = datetime.now(KST)
-    day = a.date or now.strftime("%Y-%m-%d")
+    day = _day_of(a.date) if a.date else now.strftime("%Y-%m-%d")
 
     if a.scheduled:
         report_missed(now)
@@ -330,13 +376,26 @@ def main() -> int:
             (h1, m1), (h2, m2) = WINDOW
             print(f"{now:%Y-%m-%d %H:%M} KST — 발행 시간대({h1:02}:{m1:02}~{h2:02}:{m2:02}) 아님, 게시하지 않음")
             return 0
-    try:
-        rc = run(day, a.dry_run)
-    except Exception as e:
-        print(f"⛔ {e}")
-        if not a.dry_run and _once(f"failed-{day}"):
-            telegram(f"⛔ 청년줍줍 발행 실패 {day}\n{e}")
-        return 1
+    if a.date:
+        keys = [a.date]
+    else:
+        keys = []
+        k = next_slot(day, now)                      # 한 실행에 한 건 — 두 게시물이 붙어 나가지 않게
+        if k:
+            keys.append(k)
+            if (now.hour, now.minute) >= LAST_CALL:  # 그날 마지막 기회면 남은 슬롯도 이어서
+                keys += [x for x in pending_slots(day) if x != k]
+        if not keys:
+            print(f"{day}: 이번 실행에 올릴 슬롯 없음(예약 없음·이미 게시·간격 대기)")
+    rc = 0
+    for key in keys:
+        try:
+            rc = run(key, a.dry_run) or rc
+        except Exception as e:
+            print(f"⛔ {e}")
+            if not a.dry_run and _once(f"failed-{key}"):
+                telegram(f"⛔ 청년줍줍 발행 실패 {key}\n{e}")
+            rc = 1
     if a.scheduled and not a.dry_run:
         warn_if_tomorrow_empty(day)
     return rc
