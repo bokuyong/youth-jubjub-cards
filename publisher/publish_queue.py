@@ -268,7 +268,10 @@ def run(day: str, dry: bool) -> int:
 
 
 STATE = ROOT / "state"                   # 알림 중복 방지 표식 — 워크플로가 커밋한다
-WINDOW = ((19, 0), (23, 30))             # 발행 시간대(KST)
+# 발행 시간대(KST). 처음엔 저녁 19:00~23:30 이었는데, GitHub 예약 실행이 하루 3~4번만
+# 불규칙하게 와서(2026-11 실측) 그 시간대에 한 번도 안 도는 날이 잦았다 — 11/1~11/4 네 건 놓침.
+# 새벽 게시(9/29 03:39 사고)만 막고 그날 낮·저녁 아무 때나 첫 실행에서 올린다.
+WINDOW = ((7, 0), (23, 59))
 
 
 def _once(key: str) -> bool:
@@ -305,7 +308,7 @@ def report_missed(now: datetime) -> None:
         if (f / "manifest.json").exists() and not (f / "published.json").exists() \
                 and _once(f"missed-{d}"):
             telegram(f"⚠️ {d} 예약 게시물을 발행 시간대에 올리지 못했어요(GitHub 실행 지연).\n"
-                     f"카드에 날짜가 박혀 있어 늦게 올리지 않았습니다. 다시 예약이 필요해요.")
+                     f"카드에 날짜가 박혀 있어 늦게 올리지 않았습니다. PC 대기열 채우기 작업이 새 날짜로 다시 만들어 예약합니다.")
 
 
 def main() -> int:
@@ -324,7 +327,8 @@ def main() -> int:
     if a.scheduled:
         report_missed(now)
         if not in_window(now):
-            print(f"{now:%Y-%m-%d %H:%M} KST — 발행 시간대(19:00~23:30) 아님, 게시하지 않음")
+            (h1, m1), (h2, m2) = WINDOW
+            print(f"{now:%Y-%m-%d %H:%M} KST — 발행 시간대({h1:02}:{m1:02}~{h2:02}:{m2:02}) 아님, 게시하지 않음")
             return 0
     try:
         rc = run(day, a.dry_run)
