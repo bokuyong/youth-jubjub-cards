@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-11",
+  "title": "보호종료 5년 이내 자립수당 매월 50만원",
+  "item_ids": [
+    "온통청년:dd9e19061334"
+  ],
+  "item_titles": [
+    "자립준비청년 자립 지원 (자립수당, 자립정착금, 대학생활안정자금)"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "40b9fb0c49f65958f02b49b4dd4ab6a8147cf75c16fcdfad15bcb9de36fab480"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "b0fb4c0e1ded565d5c4a2baaa69433bd129c8d8dcb41f9dedec7205799656465"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "d3ffafb5400027e5def8603a447827b265c3917f689cb8e0b1d9ce68acc29c62"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "02014af0077c00e3d7367b5ecf3e77f50356609556ca008664459433838e8c2b"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "a48e9e7a8ac9423f7a8135bc2545dba146d6df38900d355c4606e86402beba6a"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "9b9c0c494985385afd0df089002805a7bb80132132a14af47417cd17b54d373d"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "954ce2e66a5c3025c1aeeca63a704f76cf3918305e52726c9c692580f3a0cbbb"
+  },
+  "caption_sha256": "4e66d41f05ce3145b75a18bb5e59910139079138a6578f9137334fe11e210067",
+  "first_comment_sha256": "2016ddf583f07a9a4b6db966f55d33cf985b9ca1f6e3a00f417ede61145b31ee",
+  "draft_revision": 3,
+  "approved_at": "2026-11-09T21:25:55"
+}
