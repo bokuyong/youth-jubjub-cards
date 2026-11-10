@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-13",
+  "title": "익산 전세대출 이자 연 최대 3.0% 익산시가 지원해요",
+  "item_ids": [
+    "보조금24:0b246b6d99f3"
+  ],
+  "item_titles": [
+    "익산시 신혼부부 청년 주택 전세보증금 대출이자 지원사업"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "8cedf386aeb4892fa2a40fc2c6408a980ff24cbedb51940ecdaf0d3c8088f17b"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "40aea97b7ac157001fed9496ac5ea60db121cb29ee53c998296ebe1dba5d286f"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "12e713c6eec0d8d310dfcecefde3ca4029cf8eb04c6b37fa2a6a3e5dc12a984c"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "0e8c6b8160ac332f3d981005a2ea08825493ddbbbae2ce6d9f210ce04ed2993b"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "8eaaa9bf4776a2ae171c8d5797d8b394ff4c82c22cbf2363d53feb6eced14736"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "28dcda5e9627c0017a614e56aa7c8e975eeeb0ec1ebc5ebd0e8e342385295eb5"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "4becfbc2d6b6ed4ed00848f254872d1fd3e4c9950207417991a2d7a670f95ee7"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "25d5eab551e0e33beae4850f9d47850b8dd1fc2c63df69dc6c769a24d07ae558"
+  },
+  "caption_sha256": "10212eee3cc250e5dd27ece960974b332f84a124f64538dc579b729234299e74",
+  "first_comment_sha256": "b33493ffa7273534040cda1a9ba5c98bc55a7b18b595dd062e2648698191775b",
+  "draft_revision": 2,
+  "approved_at": "2026-11-10T15:16:40"
+}
