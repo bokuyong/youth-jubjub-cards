@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-12",
+  "title": "부산진구 청년 전월세 중개수수료 절반 돌려받기",
+  "item_ids": [
+    "온통청년:909feb7c35c1"
+  ],
+  "item_titles": [
+    "청년 전월세 중개수수료 지원"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "baae65f9b395335f57c1d2aa68570aaa161cab5d31f28d52dba7dd9419234d04"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "3f061dfe5eb7c1afc8c6a6b6d7123cd9ace46503816c78c24a5ef857cbe751b8"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "adf398049b994979e4ec185c2a7b614a70ff1c2e6b04312e0a0788028d63c629"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "edad2e12c646ce08fd81b0179497b87bbeb87e1c68ff4c51b35ce3dd46fe3b38"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "0d6b38d7279ce49b54c59ba283fff5e473ad75d458e91c70ed997048b9a533ed"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "5d0da7fab10f09a28a188417c4d068c8521ca96faec8d38487ab5390f5478bc0"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "3c21764a2091565de5f4aa0f011e1b76fdffc6a011d6c53427ae05c2ab37669d"
+  },
+  "caption_sha256": "9ade331c509dcd44cc7364da448f33dcc93243bd1a6d2104778a6259e055eb7c",
+  "first_comment_sha256": "91d7df6ca5c216f43848c857e1c166b91caf4fbbdde448a88b068a3834c56b1e",
+  "draft_revision": 2,
+  "approved_at": "2026-11-10T10:16:29"
+}
