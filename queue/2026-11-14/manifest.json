@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-14",
+  "title": "제주 월세·연세 대출 금리 4% 중 3.5%를 제주도가 내줘요",
+  "item_ids": [
+    "온통청년:6bb4a5162613"
+  ],
+  "item_titles": [
+    "신혼부부 등 주택전세 연월세자금 대출이자 지원"
+  ],
+  "deadline": "2026-12-31",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "681237b450f2952ebdc41f119aabe3d7d47477c6bb96482fcd3689a106158d83"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "1ff47db6eeea722e8908d3360187aa218b7853b19f1fb8f3b948c719f17cd581"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "75aee6707f45da0d896868f81cd56b9822e7315c9e82e0af2b7189188deafd3d"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "82f0cceb7b53368f73cd027be968f3181449183a23c801213b0cee404a1627dd"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "db2ed909db6716e89d3af142a53b00271b5ab05cfcd9404646c9f4e5a55e6774"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "4a25e4d5ff94f975f9f017233877058b5177672a34ff34e223450324826b0961"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "41bc444ce8ba7efb0c0f9dc7818d6ad540e612ee4f317bd52b29b25a9f0b121a"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "e1a8c97293f9ef9222555fe84098f24f4983a0e5566760d29f491569b6f4e550"
+  },
+  "caption_sha256": "d0ad22625538633cb33ac34054d5dc4cc059bab7d4e22fdc1904247ef2f3a01c",
+  "first_comment_sha256": "3a9f98b72af922bf82a1992cf7d8979f70b483732fa3caae34aacc5c83429ae2",
+  "draft_revision": 2,
+  "approved_at": "2026-11-10T15:21:23"
+}
