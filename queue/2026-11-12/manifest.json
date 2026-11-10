@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-12",
+  "title": "장흥 신혼부부 웨딩포토비 최대 30만원",
+  "item_ids": [
+    "온통청년:06dcfde1f2c6"
+  ],
+  "item_titles": [
+    "신혼부부 웨딩포토비 지원"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "bb91c7792a2f8d5b9e5c42d6c96f5c271c3111807dca677d0af2d73c07905e46"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "42441c45b8f2ef7eb90fb679af56732737ba99c411ae145df08f7a2a2df45abd"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "cd3786dde6cbdf9ed2fbed3f45df6bf282375acd0d1e94c69aa3d4a7485d4080"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "0572a130592525f6be3f66a915ed9e4a03c0757843ab2e17356410bef793f2c6"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "53b66b63096cf9aff602cfd98060bda005cad9c166c58b4bee45734566d305fa"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "d668bb68970543f14fd435e53d03d017b5611f9e5311f104edd32533b3719ab5"
+  },
+  "caption_sha256": "f64d36d30cda2ea40a1bc96a9faf6fd3e6bb6ab95b2f03b84addf1b44bea41b3",
+  "first_comment_sha256": "523b015e4599b3409d0324f1c1860cc44cf6e03dd933c032de6a4c401acfc843",
+  "draft_revision": 2,
+  "approved_at": "2026-11-10T10:13:12"
+}
