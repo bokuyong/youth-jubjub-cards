@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-15",
+  "title": "서산 청년 신혼부부 전세대출 잔액의 2.5% 이내를 지원해요",
+  "item_ids": [
+    "보조금24:793a93ea850e"
+  ],
+  "item_titles": [
+    "청년 신혼부부 주택 전세자금 대출이자 지원"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "62dd95f3a2d28db25225874ba27fd1f4a263276b171b0cbd05897f2c5cbb9fc8"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "d70fdf97d5edb1f6ad009e00a4fba8543199fdef28aeabdad9d14426e3e0495f"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "29469cdaec2e5a968d1c9ecc03433c0d6ae6e1484a2b2d07a69acf43c7876cf8"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "680bee11482b1b3a54110f9d8d028f62a7169b1bf9900c44f6007143a17b1da9"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "07c6ed1b48c9765cdf5eb670f4001cecf22fea09f2e82757c86fcade9fc5e228"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "94026ffb0b64d61bc0926d8cc3466ef4fda4fd79570dfb39741619f7796b62a6"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "465d28d17b5b8d96abe13ec385cce5d79429af8cc21df3ec82bbd30ee029ba01"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "379db93412503a5f6329428564b5967593679d2ee47a4e19e23930aecfba115f"
+  },
+  "caption_sha256": "211e193897660349b52f21dd718b769e3dbd2ce568fc6b1888f9d25780a8515d",
+  "first_comment_sha256": "43263513e3c825363f38934af577f2ca2dadb505f4a7b9243aa10ed34a2e81ae",
+  "draft_revision": 2,
+  "approved_at": "2026-11-10T21:18:41"
+}
