@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-14",
+  "title": "25~34세 한부모라면 자녀 1명당 월 10만원 아동양육비 추가",
+  "item_ids": [
+    "온통청년:b12bbe4cf739"
+  ],
+  "item_titles": [
+    "청년 한부모 자립 지원(추가 아동 양육비 지원)"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "c237d505b33761926c9371e6cfa100ffc2728e71aa85a5984c799dcf81c5f8f1"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "d2f683528b4315fbfb3dc6a8232948173593fb8defec3e86fc168f952cf9171d"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "4189c3c78dbec8c92f37f5505ae9cc6c89e25800999d9649d8f9900e1765c8b1"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "65ca37a05d8b698ec54f33c1277a26e682ff795a981fc323ce475870fa28039a"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "f6f5fbe636b067345cb5ed659a02237941c92ce092b9223662c7e92786b0da2d"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "4e9709605a4e00a1ec96b34428b5287c0984e08994ec4bfbf993d46106c847eb"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "fa2c235e11a7d588548c6ce47c9fa33466297bf1bad97814c5951230b22adc55"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "d0043e9ca1884ea6ffad1580d998d1078d3df07eba37ba9900a8c8aaf9eb9bc3"
+  },
+  "caption_sha256": "06d5b0bd92deb5b7d7db2d99ec574091ceb7fe9bfa90ff6e5d333090f59a7b3b",
+  "first_comment_sha256": "f96d6a8e82c53efa953603d4f083a03382813de24a9a26424b0247b7135ebbda",
+  "draft_revision": 3,
+  "approved_at": "2026-11-11T10:19:12"
+}
