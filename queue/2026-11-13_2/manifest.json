@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-13",
+  "title": "충북 인구감소지역 청년 신혼부부라면 결혼지원금 100만원",
+  "item_ids": [
+    "보조금24:e354a31eb71f"
+  ],
+  "item_titles": [
+    "인구감소지역 결혼지원금"
+  ],
+  "deadline": "2026-12-11",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "5f7ee67328de6aa81e5e64dc19edc7e4f7a80ae5446680c897f6969b21e21d7c"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "825b3e3eeb1871f9fa6b5ce0993103ae53fd1126320224afea06a51682f94a51"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "a49e7d81f645f865e32c3637b4ed8caca5469d0b307048fcea6f7e1300aac4f9"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "8c28fb06e840ca5a46c1b93a0c9b23567b65d88217926b77b31693ef968f7a29"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "683d24b4e5f85a7574fd9d5f4d424b204a3346c9995cfc70722f3bb1b03d90f1"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "908b2f469e48ea1b735f28b74f507a7ddfb5bebd0ba5f61a35a79182ac2264ee"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "6bcfaf99166f0db93c73673c66b4835a77ec8260b5429b5dd423f4a0925c42ef"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "e606d3c0b39b069eb925a74deb145a67fd8b2aaf42f322deb97dbb10e856c2dc"
+  },
+  "caption_sha256": "33974e5ea30f457d3224a820e50e178decccf08b91f3673a78b05fffd9a87932",
+  "first_comment_sha256": "d531004d55c359c212fde6f5422bfec21e6453103a687521d6144e21e3ac032c",
+  "draft_revision": 6,
+  "approved_at": "2026-11-11T10:13:32"
+}
