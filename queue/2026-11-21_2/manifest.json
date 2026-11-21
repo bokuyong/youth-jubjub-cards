@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-21",
+  "title": "시흥 사는 시흥 대학생 지정 프로그램 수료했다면 시흥화폐 20만원",
+  "item_ids": [
+    "보조금24:9cb90d7d1da6"
+  ],
+  "item_titles": [
+    "시흥시 관내 대학생 지원금"
+  ],
+  "deadline": "2026-11-27",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "57ba5753ccf9348e922a9d8ebb57fdf7142cc173a74dac645b7b18995b618ef0"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "a5e2c9090c5c965babeba47597302136beaaae7425741ee5cd8ff3e5ed826998"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "d00d0eb27686cb4443933825e69468cf847016e68b862f33a1749f4b024e30f3"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "8bf4a19266f88b9346fbe6b885b3d22de1be8682f24f6a3ce4409b02209a5c9c"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "a59cd4f1e27550ee541a00a6046af1d9ef26f23c2c7897c33e34ea544dad4b5c"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "3b47389feb435562d05ae784fb8cd379f47f05adc9a37edaf01239de44fad61a"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "3b6aa6b92186d8c3771b4a848aefd243618a9dbf52a86b777dc2027976635f88"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "1bf70ef39ca1a11acd6bb2392be941277e29a22f911e73d2d3c674047899f530"
+  },
+  "caption_sha256": "4e8df3bf2064d7f4cec5e0f3ac6d80996d5e69e8f14b590ae51f129344070dfd",
+  "first_comment_sha256": "a986eb5cfae647c41828ba9628b7a268b8a0ecd216951c25ddf27590ac7f5f2b",
+  "draft_revision": 2,
+  "approved_at": "2026-11-21T10:20:14"
+}
