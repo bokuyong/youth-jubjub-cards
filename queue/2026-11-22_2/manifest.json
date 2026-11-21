@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-22",
+  "title": "서귀포 미취업 청년 자격증·어학 응시료 최대 10만원 지원",
+  "item_ids": [
+    "보조금24:257a85e248b8"
+  ],
+  "item_titles": [
+    "취업준비 청년 자격증 등 응시료 지원 사업"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "dc94e233c5c4d7330ad3d679da8d4330972328e2ba4f58605969be8ec5ae30c4"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "b4db0b52058232e84c9d4bd42c95c319dcdff400515019d0447ad6fc2a7718fc"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "49a154357ae4493aafdaa40f1cb07c4b2b381a4526f95a53a7dd0a60cb583083"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "1d774f16f78a188b314f012837a05f2c68dcfb3f288b3769ecc30fdb4b3263c7"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "6cef8adf8db272018850a227b1af4ee8080c1f283a757a336ad41a8c966c2036"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "0e3476c23a81616cb5a630bb01ae9beed9f2e457e7e0c5f44efffca427010ed9"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "93d7c968dfbd3c1fa84b9954fa87f371ecdfcb46844a12bb580da7fd76e585cd"
+  },
+  "caption_sha256": "970bdb51e0f244932103bac229fd25f621ede1b7388273c7b7895517218a26af",
+  "first_comment_sha256": "8e04d5b2b6021f0cc351f9d0563ca614ac94410170262c946f2cb5906640f7f1",
+  "draft_revision": 2,
+  "approved_at": "2026-11-21T10:27:30"
+}
