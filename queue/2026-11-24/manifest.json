@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-24",
+  "title": "이력서 사진 찍어야 한다면 광주 남구 구직 청년 증명사진 무료 촬영",
+  "item_ids": [
+    "온통청년:a54e6aaf60f1"
+  ],
+  "item_titles": [
+    "[남구] 구직청년 증명사진 촬영지원"
+  ],
+  "deadline": "2026-12-18",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "0920d8c696d0a12b9aa4ee6daa37e9f29bd1039341fabf783253af71bb8081d0"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "b58ba22043861a5d5260b9a64055a2c8155143fa3fd9d5f3a747a137c2ef8d49"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "4150112f8f6a282a190d5f250277d38d92fdf652df5e4557dc8c4ef78b52b1d2"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "3712d81bdb2cdf548dceb5d8f3e5b62dd0eb4c34a38881672368b9715c508bb2"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "6579e0e0c6ead1833cd5ec6709bc62cf7b32acda3b5d7ae55e6506d64b7ad869"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "6f3ea33adf260b26e9493d41f1281f0884e05c1b24d20fd10b8dd77056d194cd"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "e10c1fd1754b292fa559b28955ed1c5577fc2cf1478d3374b8b591617ff630f2"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "548e2a96f88144fd8848ec5e094baedd57e773ed8d49ba81fb7e35fcfee87f3b"
+  },
+  "caption_sha256": "39a4927291950482e2aeb0598df2efbf2d70ba68a8ba33b31bd53fec33bc53ac",
+  "first_comment_sha256": "a52d4de2edc61cf198c1fe42cc90867df57a3b26ea223c931287cbb6839791a0",
+  "draft_revision": 2,
+  "approved_at": "2026-11-21T15:18:53"
+}
