@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-23",
+  "title": "ICT·AI 창업 준비 중? 송파 창업센터 2027년 입주자 모집",
+  "item_ids": [
+    "K-Startup:99cfac1de7eb"
+  ],
+  "item_titles": [
+    "2027년 「송파ICT청년창업지원센터」 입주 모집 공고"
+  ],
+  "deadline": "2026-12-13",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "40b78fc429e4c5ef9c85407be1278e97f6a8407283195157938b215bb9d8582a"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "a7fcb7d1d1a80b4469e94e727f083935a638e69380a041f0d8fc766f49e17ab4"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "25ba0637bd38be5541e0b5664f99dc0f35711e825f0eb5678271113d20dd4e20"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "a51ccd79945b16bd21a19a402db431a5b9a309b990ba4c43d043da5e454ae299"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "125e6c40ef3ab9556f0d2b152fc12d3cd0dc9c31c3df3ae4b42ea2706fbc9e33"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "8443aad058bf33f8024413fecab89d098b896d3489c979de0878c95dbc9facb6"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "fc2c0219e19b6a93ce57280d3ef02bb01c285aa7057570b2c3225e4de405ba25"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "e0706e2f5aad121c0579b3090a1e0b272a67d0a2569690f896aef0158c1acac5"
+  },
+  "caption_sha256": "daa54922dbc28c6ee166771fb372a70ecc46a9b4646f01e997ab29691a3a6391",
+  "first_comment_sha256": "d70b7f63cbc4061b58bcc788e49e39abb34002b5aa714bf537e89928292757ec",
+  "draft_revision": 1,
+  "approved_at": "2026-11-21T15:15:23"
+}
