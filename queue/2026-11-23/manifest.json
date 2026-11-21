@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-23",
+  "title": "원주 사는 구직 청년 AI 면접·역량검사 이용권 지원",
+  "item_ids": [
+    "온통청년:44c34675a4ed"
+  ],
+  "item_titles": [
+    "「원주시 청년지원센터」 AI 면접 및 역량 검사 체험 지원"
+  ],
+  "deadline": "2026-11-27",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "dc0176860a1b2bc7996979566f4dbd04b6c9d3cad66130940050160113063b07"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "ac5f29cae8a36bfa08243b8d78dafaa81a8e9b302a29646a40cbfe5c7ea528aa"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "051a4d11e2dfc589521428061b8d3551cd6c65eac6109b1a2ab98af478df415e"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "1bbad314b711fa3eb77b4c43e761df2f1025be1cc3369731072fc10a8895fec3"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "d31e6465d70ed3267bc58b8eef39f77b7c9b0ea8d24b5a8a8d32e373d7f18015"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "dd4bd263aa3a63c73d243b35bebc5425255d8790a9377c83a9ed875b19d37aaf"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "16d9999c032bf4e9fa4b7764c9bdbedace86daa64386cfe06fdb5769528f676a"
+  },
+  "caption_sha256": "cc0b565f3b83c23f090982ffc5b4f231e7b3ab971972ed50135328907f6ac4d5",
+  "first_comment_sha256": "5f261d2d5336d2147b44ca5b64abe178f0c3485c150210fba7a2c5e6b5292cfe",
+  "draft_revision": 1,
+  "approved_at": "2026-11-21T10:29:57"
+}
