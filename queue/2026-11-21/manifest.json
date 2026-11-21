@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-21",
+  "title": "포천 행복주택· 송우파인빌 살면 월 임대료 50% 지원",
+  "item_ids": [
+    "보조금24:bbaefe49dff3"
+  ],
+  "item_titles": [
+    "포천시 청년·신혼부부 공공임대주택 주거비 지원(월 임대료)(신규신청)"
+  ],
+  "deadline": "2026-12-10",
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "0bf892155bff283abdd3bbe9af34c8331f7541b8ad00c56363c3e1bec05af595"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "0bbdc08c0353c1c6ff88cdc6ceca41be9ce848017183bed52cb8000932fba86d"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "a5f612b5aaf795df8b69da05544456f5120b60b359efef896150113ae4ab8e20"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "c8af679f134c79a1ff5bd22a0cb976f88e067b871e5665a47d51f53aad03a5e7"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "392f3660296ef847b1bd5db527dbca598cfad8f3c6604585a041008a1406ffd7"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "f593cccff8c339e3d243e50fbdb84350b5aa14952f7807a5ace6040df5af6df5"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "cb1ad103d8f887db68ec002a2976e05654d768d093bee9b040309ae9f0843727"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "ed921a0f52f25629410c42777e3e35ad8a32b91e48df2c662b8b1a287a66dc1e"
+  },
+  "caption_sha256": "7b82ba628ea565c4aa4709ed3727ccb16f19bf6658851d0622aa0708a077f6b6",
+  "first_comment_sha256": "4512d438c22ac1686f5ebc19ab53d503177126e2ef2bdf78b69eeeec4c3d650f",
+  "draft_revision": 3,
+  "approved_at": "2026-11-21T10:16:29"
+}
