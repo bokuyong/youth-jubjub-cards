@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-22",
+  "title": "대구 청년희망주택 살면 보증금 대출이자 50% 지원",
+  "item_ids": [
+    "보조금24:4b8f33e95383"
+  ],
+  "item_titles": [
+    "청년 희망주택 대출이자 지원"
+  ],
+  "deadline": null,
+  "images": [
+    {
+      "name": "00.jpg",
+      "sha256": "aba21db06d735552a167557d1b1545ea30f76087b4af109312e5082e361d83c8"
+    },
+    {
+      "name": "01.jpg",
+      "sha256": "18de012797c82fe0e67a21c98c8a5a38f57c84384c40fe165f4ae71c633e1a5f"
+    },
+    {
+      "name": "02.jpg",
+      "sha256": "22df964fa05620bc91e8323b7cd223d31585a40bb5c6c28651e7dfd5baaa1a27"
+    },
+    {
+      "name": "03.jpg",
+      "sha256": "1be232bd490599a7a2a6bbb55fb28c2f0441ae61afa84c74e2103c743d4f4c65"
+    },
+    {
+      "name": "04.jpg",
+      "sha256": "1859b08ac6410c373161ffd526f74ea5d31fc846df3a7eb227cc0a5fc0d2998a"
+    },
+    {
+      "name": "05.jpg",
+      "sha256": "489fef06134b86ccc1cf82ab96d920bb21a4e12e4ebca60f3b989571b99004a8"
+    },
+    {
+      "name": "06.jpg",
+      "sha256": "2c18b1cb7dd6e4cd4a7929a3a550ced321cf2d12b299d10e05a973723f1493c0"
+    }
+  ],
+  "reel": {
+    "name": "reel.mp4",
+    "sha256": "06e88317ac9b2a8293c840443ad4cdcc095e5d002784d3e173c5aa223bd984a7"
+  },
+  "caption_sha256": "c4647f6c7ae4f34769b9625543d980ad61f8bfcb5ebccd98d8610ccf9d0d9d13",
+  "first_comment_sha256": "b28662e255b4ead0941d68026bd8e65435a0f5ccdd902c88be59516cb1e1d519",
+  "draft_revision": 2,
+  "approved_at": "2026-11-21T10:24:13"
+}
